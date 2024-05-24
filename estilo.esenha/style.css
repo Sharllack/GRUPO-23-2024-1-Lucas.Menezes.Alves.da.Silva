@@ -1,0 +1,228 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../imagens/imagenssite/fundo.jpeg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: black;
+}
+
+header {
+    background-color: rgb(212, 212, 212);
+    padding: 10px;
+    transition: .5s;
+    position: sticky;
+    top: -1px;
+    z-index: 10;
+
+}
+
+header #title {
+    display: flex;
+    align-items: center;
+}
+
+header #img1 {
+    width: 100px;
+    transition: .5s;
+}
+
+header #img2 {
+    width: 100px;
+    height: 60px;
+    margin-right: 50px;
+    transition: .5s;
+}
+
+header.rolagem {
+    background-color: #6d453400;
+    box-shadow: none;
+    transition: .5s;
+}
+
+header.rolagem #img1 {
+    width: 80px;
+    transition: .5s;
+}
+
+header.rolagem #img2 {
+    width: 80px;
+    height: 55px;
+    transition: .5s;
+}
+
+header.rolagem div, header.rolagem div a, header.rolagem #pe a{
+    background-color: #6d453400;
+    transition: .5s;
+    text-shadow: none;
+}
+
+header.rolagem #pe, header.rolagem #burguer{
+    display: none;
+}
+
+header.rolagem .logos {
+    height: 15px;
+    width: 15px;
+    transition: .5s;
+}
+
+header.rolagem #usu {
+    font-size: 15px;
+    transition: .5s;
+}
+
+header.rolagem #logout {
+    font-size: 15px;
+}
+
+header.rolagem #openMenu, header.rolagem #closeMenu{
+    display: block;
+    transition: .5s;
+}
+
+header h1 {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    margin-top: 11px;
+}
+
+
+#topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(212, 212, 212);
+    margin: -10px;
+}
+
+#shield img {
+    margin-right: 5px;  
+}
+
+#logo {
+    margin-right: 35px;
+}
+
+#logo img {
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+}
+
+
+#container {
+    background-color: #073260f1;
+    width: 300px;
+    height: 250px;
+    border-radius: 25px;
+    padding: 5px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.425);
+    margin: auto;
+    margin-top: 150px;
+}
+
+main {
+    animation-name: fadeInDown;
+    -webkit-animation-name: fadeInDown;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+        -webkit-transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+        -webkit-transform: none;
+    }
+}
+
+h2 {
+    text-align: center;
+    margin: 2em;
+    color: white;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.568);
+}
+
+.title {
+    text-align: center;
+    margin: 1.5em;
+    color: white;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.568);
+}
+
+label {
+    color: white;
+    margin-left: 39px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.568);
+    cursor: pointer;
+}
+
+#idemail {
+    background-color: rgb(255, 255, 255);
+    padding: 8px;
+    border: none;
+    border-radius: 25px;
+    padding-right: 50px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.425);
+    margin-left: 33px;
+    margin-top: 10px;
+}
+
+#btn-cancel {
+    margin-top: 29px;
+    margin-left: 39px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.06em;
+    cursor: pointer;
+}
+
+#btn-cancel:hover {
+    text-decoration: underline;
+}
+
+#btn-enviar {
+    float: right;
+    margin-top: 23px;
+    margin-right: 33px;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#btn-enviar:hover {
+    background-color: rgb(226, 226, 226);
+}
+
+footer {
+    background-color: rgb(27, 27, 27);
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
