@@ -32,19 +32,23 @@ function validarCPF(cpf) {
 }
 
 // Exemplo de uso:
-const cpfExemplo = '123.456.789-09';
-if (validarCPF(cpfExemplo)) {
-} else {
-    console.log('CPF inválido.');
-}
 
         function verificarCPF() {
             const cpfInput = document.getElementById('cpf');
             const cpf = cpfInput.value;
 
             if (validarCPF(cpf)) {
+                document.getElementById('rescpf').innerHTML = "Tudo certo!";
+                document.getElementById('rescpf').style.color = "rgb(0, 255, 42)";
+                document.getElementById('rescpf').style.fontWeight = "bold";
+                document.getElementById('rescpf').style.float = "right";
+                document.getElementById('cpf').style.border = "1.5px solid rgb(0, 255, 42)";
             } else {
-                alert('CPF inválido.');
+                document.getElementById('rescpf').innerHTML = "CPF inválido!";
+                document.getElementById('rescpf').style.color = "red";
+                document.getElementById('rescpf').style.fontWeight = "bold";
+                document.getElementById('rescpf').style.float = "right";
+                document.getElementById('cpf').style.border = "1.5px solid red";
             }
         }
 
