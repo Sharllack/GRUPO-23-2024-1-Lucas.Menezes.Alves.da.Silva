@@ -35,6 +35,10 @@ function confirmarSenha() {
 function cadastrarUsuario(event) {
     event.preventDefault();
 
+    if (!verificarCPF()) {
+        return false;
+    }
+
     if(sen.value != csen.value){
         resSenha.textContent = "As senhas não correspondem!";
         resSenha.style.color = "red";

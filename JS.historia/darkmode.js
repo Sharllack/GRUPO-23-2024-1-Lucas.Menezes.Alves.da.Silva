@@ -1,5 +1,5 @@
 const texto = document.querySelector('.texto');
-const cont = document.querySelector('.conteudo');
+const cont = document.querySelectorAll('.conteudo');
 const tit = document.querySelector('.title');
 const topo = document.getElementById('topo');
 const header = document.getElementById('header');
@@ -27,8 +27,10 @@ toggle.addEventListener('change', function() {
       });
       texto.style.backgroundColor = "#000000e8";
       texto.style.transition = '.5s';
-      cont.style.color = "white";
-      cont.style.transition = ".5s";
+      cont.forEach(function(elemento) {
+        elemento.style.color = "white";
+        elemento.style.transition = ".5s";
+      });
       tit.style.color = "white";
       tit.style.transition = ".5s";
       topo.style.backgroundColor = "black";
@@ -64,8 +66,10 @@ toggle.addEventListener('change', function() {
       console.log('Toggle OFF');
       texto.style.backgroundColor = "";
       texto.style.transition = '.5s';
-      cont.style.color = "";
-      cont.style.transition = ".5s";
+      cont.forEach(function(elemento) {
+        elemento.style.color = "";
+        elemento.style.transition = ".5s";
+      });
       tit.style.color = "";
       tit.style.transition = ".5s";
       topo.style.backgroundColor = "";
@@ -106,8 +110,10 @@ if (darkModePreference === 'on') {
       });
     texto.style.backgroundColor = "#000000e8";
     texto.style.transition = '.5s';
-    cont.style.color = "white";
-    cont.style.transition = ".5s";
+    cont.forEach(function(elemento) {
+      elemento.style.color = "white";
+      elemento.style.transition = ".5s";
+    });
     tit.style.color = "white";
     tit.style.transition = ".5s";
     topo.style.backgroundColor = "black";
@@ -142,8 +148,10 @@ if (darkModePreference === 'on') {
       });
     texto.style.backgroundColor = "";
     texto.style.transition = '.5s';
-    cont.style.color = "";
-    cont.style.transition = ".5s";
+    cont.forEach(function(elemento) {
+      elemento.style.color = "";
+      elemento.style.transition = ".5s";
+    });
     tit.style.color = "";
     tit.style.transition = ".5s";
     topo.style.backgroundColor = "";
