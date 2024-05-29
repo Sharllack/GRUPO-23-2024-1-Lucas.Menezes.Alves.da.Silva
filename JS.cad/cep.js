@@ -14,17 +14,25 @@ function buscaCEP() {
                 document.getElementById("idcdd").value = endereco.city;
                 document.getElementById('idest').value = endereco.state;
                 document.getElementById('idbai').value = endereco.neighborhood;
-                document.getElementById('rescep').innerHTML = "Tudo certo!";
-                document.getElementById('rescep').style.color = "rgb(0, 255, 42)";
-                document.getElementById('rescep').style.fontWeight = "bold";
-                document.getElementById('rescep').style.float = "right";
+                document.getElementById('resCep').innerHTML = "Tudo certo!";
+                document.getElementById('resCep').style.color = "rgb(0, 255, 42)";
+                document.getElementById('resCep').style.marginBottom = "5px";
+                document.getElementById('resCep').style.display = "block";
                 document.getElementById('idcep').style.border = "1.5px solid rgb(0, 255, 42)"
+                return true;
             } else if (req.status === 404) {
-                document.getElementById('rescep').innerHTML = "CEP inválido!";
-                document.getElementById('rescep').style.color = "red";
-                document.getElementById('rescep').style.fontWeight = "bold";
-                document.getElementById('rescep').style.float = "right";
+                document.getElementById("idrua").value = "";
+                document.getElementById("idcdd").value = "";
+                document.getElementById('idest').value = "";
+                document.getElementById('idbai').value = "";
+                document.getElementById('idnum').value = "";
+                document.getElementById('idcomp').value = "";
+                document.getElementById('resCep').innerHTML = "CEP inválido!";
+                document.getElementById('resCep').style.color = "red";
+                document.getElementById('resCep').style.marginBottom = "5px";
+                document.getElementById('resCep').style.display = "block";
                 document.getElementById('idcep').style.border = "1.5px solid red"
+                return false;
             } else {
                 alert('Erro ao fazer a requisição.')
             }

@@ -35,20 +35,22 @@ function validarCPF(cpf) {
 
         function verificarCPF() {
             const cpfInput = document.getElementById('cpf');
-            const cpf = cpfInput.value;
+            const cpf1 = cpfInput.value;
 
-            if (validarCPF(cpf)) {
-                document.getElementById('rescpf').innerHTML = "Tudo certo!";
-                document.getElementById('rescpf').style.color = "rgb(0, 255, 42)";
-                document.getElementById('rescpf').style.fontWeight = "bold";
-                document.getElementById('rescpf').style.float = "right";
+            if (validarCPF(cpf1)) {
+                document.getElementById('resCpf').innerHTML = "Tudo certo!";
+                document.getElementById('resCpf').style.color = "rgb(0, 255, 42)";
                 document.getElementById('cpf').style.border = "1.5px solid rgb(0, 255, 42)";
+                document.getElementById('resCpf').style.marginBottom = "5px";
+                document.getElementById('resCpf').style.display = "block";
+                return true;
             } else {
-                document.getElementById('rescpf').innerHTML = "CPF inválido!";
-                document.getElementById('rescpf').style.color = "red";
-                document.getElementById('rescpf').style.fontWeight = "bold";
-                document.getElementById('rescpf').style.float = "right";
+                document.getElementById('resCpf').innerHTML = "CPF inválido!";
+                document.getElementById('resCpf').style.color = "red";
                 document.getElementById('cpf').style.border = "1.5px solid red";
+                document.getElementById('resCpf').style.marginBottom = "5px";
+                document.getElementById('resCpf').style.display = "block";
+                return false;
             }
         }
 

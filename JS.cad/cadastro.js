@@ -1,5 +1,3 @@
-function cadastrarUsuario(event) {
-    event.preventDefault();
     let nome = document.getElementById("idnome");
     let data = document.getElementById("idata");
     let sexo = document.getElementById("idsexo");
@@ -18,10 +16,31 @@ function cadastrarUsuario(event) {
     let login = document.getElementById("idlogin");
     let sen = document.getElementById("idsen");
     let csen = document.getElementById("idcsen");
+    let resSenha = document.getElementById('resSenha');
 
-    if (sen.value != csen.value) {
-        alert('As senhas não correspondem!');
-        
+function confirmarSenha() {
+    if(sen.value != csen.value){
+        resSenha.textContent = "As senhas não correspondem!";
+        resSenha.style.color = "red";
+        csen.style.border = "1.5px solid red";
+        return false;
+    } else {
+        resSenha.textContent = "Tudo certo!";
+        resSenha.style.color = "green";
+        csen.style.border = "1.5px solid green";
+        return true;
+    }
+}
+
+function cadastrarUsuario(event) {
+    event.preventDefault();
+
+    if(sen.value != csen.value){
+        resSenha.textContent = "As senhas não correspondem!";
+        resSenha.style.color = "red";
+        csen.style.border = "1.5px solid red";
+        return false;
+    
     }else if (nome.value != ''
             && data.value != ''
             && sexo.value != ''
@@ -60,13 +79,16 @@ function cadastrarUsuario(event) {
                         localStorage.setItem('sen', sen.value);
                          localStorage.setItem('csen', csen.value);
 
-    alert('Cadastro efetuado com sucesso!');
+    resSenha.textContent = "Cadastro efetuado com sucesso!";
+    resSenha.style.color = "green";
 
-    window.location = "./login.html";
+    setTimeout(function(){ window.location = "./login.html"; }, 2000);
+
 
     } else {
         alert('Preencha os campos corretamente.');
-    }
+    };
+
 }
 
 function formataCell(v){
