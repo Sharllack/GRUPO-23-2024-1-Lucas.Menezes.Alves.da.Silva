@@ -19,7 +19,7 @@
         left: 0;
         width: 100vw;
         height: 100vh;
-        background-color:  rgb(212, 212, 212);
+        background-color: rgb(212, 212, 212);
         clip-path: circle(100px at 90% -15%);
         transition: 1s ease-out;
 
@@ -105,7 +105,6 @@
         clip-path: circle(100px at 90% -15%);
         transition: 1s ease-out;
 
-
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
@@ -133,6 +132,16 @@
 
     #topo.active #logado div {
         opacity: 1;
+    }
+
+    #logout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logout-button {
+        margin-bottom: 30px;
     }
 
     header {
