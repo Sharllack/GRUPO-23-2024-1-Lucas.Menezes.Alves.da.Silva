@@ -24,7 +24,7 @@ window.addEventListener('scroll', function(){
 window.onload = function() {
     const username = localStorage.getItem('usuario'); // Recupera o nome do usuário do armazenamento local
     const login = localStorage.getItem('login');
-    if(username == login && username != '' && login != '') {
+    if(username === login && username != null && login != null) {
       document.getElementById('user').textContent = 'Olá, ' + username + "!";
       document.getElementById('logout-button').style.display = 'block';
       document.getElementById('usu').style.display = 'none'; // Esconde as opções de login e cadastro
