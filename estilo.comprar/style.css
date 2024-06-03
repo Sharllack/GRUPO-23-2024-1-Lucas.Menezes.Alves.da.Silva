@@ -25,7 +25,7 @@ body { font-family: Arial, sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:  rgb(212, 212, 212);
+    background-color: rgb(212, 212, 212);
     margin: -10px;
 }
 
@@ -41,14 +41,22 @@ body { font-family: Arial, sans-serif;
 
 #topo a {
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
     font-weight: bold;
 }
 
 #usu {
-    font-size: 15px;
+    display: flex;
+    align-items: center;
+    font-size: .9em;
     transition: .5s;
-    background-color:  rgb(212, 212, 212);
+    height: 100px;
+    background-color: rgb(212, 212, 212);
+}
+
+#user {
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 .logos {
@@ -89,7 +97,7 @@ body { font-family: Arial, sans-serif;
 #logado {
     display: flex;
     align-items: center;
-    background-color:  rgb(212, 212, 212);
+    background-color: rgb(212, 212, 212);
 }
 
 header {
@@ -265,10 +273,6 @@ header h1 a {
     margin-top: 5px;
     position: relative;
     transition: .3s;
-}
-
-#topo a {
-    padding: 3px;
 }
 
 .logos {
