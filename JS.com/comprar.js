@@ -103,6 +103,7 @@ function buscarDetalhesProduto(idProduto) {
         <p class="price">${produto.preco}</p>
         <p class="parc">Em até 4x sem juros!</p>
         <button class="buy-button" onclick="comprarProduto()">Adicionar ao carrinho</button>
+        <p id="res"></p>
         <button onclick="toggleDescricao()" id="desc">Descrição</button>
         <div id="descricaoProduto" class="hidden">
               <p>${produto.descricao}</p>
@@ -134,7 +135,7 @@ function buscarDetalhesProduto(idProduto) {
   }
   
   function comprarProduto() {
-    alert("Produto adicionado ao carrinho!");
+    document.getElementById('res').textContent = "Produto adicionado ao carrinho!";
   }
 
   function mudouTamanho() {
