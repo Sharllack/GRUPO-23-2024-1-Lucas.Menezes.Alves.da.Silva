@@ -142,6 +142,11 @@
 
     #logout-button {
         margin-bottom: 30px;
+        margin-right: 35px;
+    }
+
+    #toggle-button {
+        margin-left: 35px;
     }
 
     header {
@@ -378,6 +383,21 @@ footer {
         opacity: 1;
     }
 
+    #logout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logout-button {
+        margin-bottom: 30px;
+        margin-right: 35px;
+    }
+
+    #toggle-button {
+        margin-left: 35px;
+    }
+
     header {
         position: sticky;
         top: -1px;
@@ -612,6 +632,21 @@ footer {
         opacity: 1;
     }
 
+    #logout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logout-button {
+        margin-bottom: 30px;
+        margin-right: 35px;
+    }
+
+    #toggle-button {
+        margin-left: 35px;
+    }
+
     header {
         position: sticky;
         top: -1px;
@@ -844,6 +879,21 @@ footer {
 
     #topo.active #logado div {
         opacity: 1;
+    }
+
+    #logout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logout-button {
+        margin-bottom: 30px;
+        margin-right: 35px;
+    }
+
+    #toggle-button {
+        margin-left: 35px;
     }
 
     header {

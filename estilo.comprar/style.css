@@ -56,7 +56,7 @@ body { font-family: Arial, sans-serif;
 
 #user {
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .logos {
@@ -76,9 +76,10 @@ body { font-family: Arial, sans-serif;
 #logout-button {
     background: none;
     border: none;
-    color: white;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
     cursor: pointer;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 #logout-button:hover {
@@ -87,17 +88,18 @@ body { font-family: Arial, sans-serif;
 
 #logout span {
     vertical-align: middle;
-    margin-right: 50px;
 }
 
 #logout-button {
     display: none;
+    margin-left: 50px;
 }
 
 #logado {
     display: flex;
     align-items: center;
     background-color: rgb(212, 212, 212);
+    margin-left: 20px;
 }
 
 header {
@@ -333,8 +335,9 @@ header h1 a {
 
 #toggle-button {
     position: relative;
-    width: 110px;
+    width: 60px;
     height: 34px;
+    margin-right: 40px;
     margin-left: 10px;
   }
 
