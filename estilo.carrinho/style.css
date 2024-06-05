@@ -2,7 +2,7 @@
 
 body {
     background: url('../imagens/em_construcao-1024x458.png');
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
     background-position: top center;
     background-repeat: no-repeat;
