@@ -9,15 +9,18 @@ function logar(event) {
     localStorage.setItem('usuario', usuario.value);
 
     if (login == usuario.value && pass == sen.value) {
-        alert('Usuário logado com sucesso!');
-        
-        window.location = './index.html';
+        document.getElementById('res').textContent = 'Usuário logado com sucesso!';
+        document.getElementById('res').style.color = 'green';
+
+        setTimeout(function(){ window.location = "./index.html"; }, 2000);
 
     } else if (usuario.value == '' && sen.value == '' ) {
-        alert('Preencha todos os dados!');
+        document.getElementById('res').textContent = 'Preencha todos os dados!';
+        document.getElementById('res').style.color = 'black';
 
     } else {
-        alert('Usuário ou senha incorretos!');
+        document.getElementById('res').textContent = 'Usuario ou senha incorretos!';
+        document.getElementById('res').style.color = 'red';
         
     }
 

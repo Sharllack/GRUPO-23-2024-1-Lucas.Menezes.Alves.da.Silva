@@ -88,7 +88,6 @@ body {
 
 #logout span {
     vertical-align: middle;
-    color: black;
 }
 
 .hr1, .hr2 {
@@ -108,7 +107,7 @@ body {
 header {
     background-color: rgb(212, 212, 212);
     color: rgb(0, 0, 0);
-    padding: 10px;
+    padding: 8px;
     transition: .5s;
     position: sticky;
     top: -1px;
@@ -390,7 +389,7 @@ header h1 a {
         max-width: 800px;
         margin: auto;
         margin-bottom: 10px;
-
+        padding: 10px;
   }
 
   #footer {
