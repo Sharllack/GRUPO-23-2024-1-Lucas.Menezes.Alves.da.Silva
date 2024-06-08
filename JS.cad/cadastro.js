@@ -104,3 +104,22 @@ function formataTel(v){
     v.value = v.value.replace(/\D/g, '');
     v.value = v.value.replace(/(\d{2})(\d{2})(\d{4})(\d)/, '+$1 ($2) $3-$4');
 }
+
+// Função para verificar se apenas caracteres alfabéticos foram inseridos
+function apenasAlfabeticos(event) {
+    var input = event.target;
+    var valor = input.value;
+    
+    // Expressão regular para verificar se há apenas caracteres alfabéticos
+    var regex = /^[a-zA-Z]+$/;
+    
+    // Se o valor não corresponder à expressão regular, limpe o campo
+    if (!regex.test(valor)) {
+        input.value = valor.replace(/[^a-zA-Z]/g, '');
+    }
+}
+
+// Adicione event listeners para os campos de login, senha e confirmação de senha
+document.getElementById('idlogin').addEventListener('input', apenasAlfabeticos);
+document.getElementById('idsen').addEventListener('input', apenasAlfabeticos);
+document.getElementById('idcsen').addEventListener('input', apenasAlfabeticos);
