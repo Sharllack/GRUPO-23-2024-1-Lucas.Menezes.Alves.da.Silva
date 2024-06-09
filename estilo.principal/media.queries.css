@@ -1,6 +1,10 @@
 @charset "UTF-8";
 
 @media screen and (max-width: 375px) {
+    
+    .carousel img {
+        width: calc(100% / 2.13);
+    }
 
     .hamburguer {
         display: block;
@@ -368,6 +372,10 @@
 }
 
 @media screen and (min-width: 375px) and (max-width: 538px) {
+
+    .carousel img {
+        width: calc(100% / 2.09);
+    }
     
     .hamburguer {
         display: block;
@@ -730,6 +738,10 @@
 
 @media screen and (min-width: 538px) and (max-width: 628px) {
 
+    .carousel img {
+        width: calc(100% / 3.18);
+    }
+
     .hamburguer {
         display: block;
         z-index: 1;
@@ -1059,6 +1071,10 @@
 }
 
 @media screen and (min-width: 628px) and (max-width: 1349px) {
+
+    .carousel img {
+        width: calc(100% / 4.3);
+    }
         
     .hamburguer {
         display: block;
