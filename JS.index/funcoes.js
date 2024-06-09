@@ -115,3 +115,17 @@ carousel.addEventListener('touchmove', dragging);
 carousel.addEventListener('mouseup', dragStop);
 carousel.addEventListener('mouseleave', dragStop);
 carousel.addEventListener('touchend', dragStop);
+
+window.sr = ScrollReveal({ reset: true });
+
+sr.reveal('.wrapper', { duration: 1500 });
+
+let elem_preloader = document.getElementById("preloader");
+let elem_loader = document.getElementById("loader");
+console.log("Testing... Ok");
+
+
+setTimeout(function() {
+  elem_preloader.classList.remove("preloader");
+  elem_loader.classList.remove("loader");
+  }, 1280);
