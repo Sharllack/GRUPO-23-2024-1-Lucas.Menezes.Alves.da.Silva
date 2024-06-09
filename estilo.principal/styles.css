@@ -108,7 +108,7 @@ header {
     transition: .5s;
     position: sticky;
     top: -1px;
-    z-index: 10;
+    z-index: 100;
 
 }
 
@@ -563,6 +563,8 @@ main {
     scroll-behavior: smooth;
     display: flex;
     flex-direction: row;
+    padding: 5px;
+    margin-top: 10px;
 }
 
 .carousel.dragging {
@@ -576,14 +578,16 @@ main {
 
 .carousel img {
     height: 250px;
-    width: 289px;
+    width: 226.2px;
+    border-radius: 10px;
 }
 
 .carousel div {
     margin-left: 14px;
-    margin-top: 15px;
     height: 420px;
     background: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.26);
+    border-radius: 10px;
 }
 
 .carousel div:first-child {
@@ -610,7 +614,7 @@ main {
 }
 
 .carousel .hr2 {
-    margin: 20px 20px 0px 20px;
+    margin: 10px 20px 0px 20px;
 }
 
 .carousel span {
