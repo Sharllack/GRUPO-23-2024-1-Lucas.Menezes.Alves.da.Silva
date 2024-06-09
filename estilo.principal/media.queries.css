@@ -1,10 +1,16 @@
 @charset "UTF-8";
 
 @media screen and (max-width: 375px) {
+
+    .wrapper i {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
     
     .carousel img {
-        width: 120px;
-        height: 120px;
+        width: 118px;
+        height: 118px;
     }
 
     .carousel div {
@@ -298,18 +304,18 @@
     }
     
     .footer-section p {
-        font-size: 9px;
+        font-size: 11px;
         line-height: 1.5;
     }
 
     .footer-section ul li a {
         color: #fff;
         text-decoration: none;
-        font-size: 9px;
+        font-size: 7px;
     }
 
     .footer-bottom p {
-        font-size: 9px;
+        font-size: 7px;
         margin: 0;
     }
 }
