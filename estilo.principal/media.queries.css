@@ -1340,13 +1340,13 @@
     }
 
     .conteudo1, .conteudo3 {
-        animation: appear1 1.5s ease-out;
+        animation: appear1 2s ease-out;
         animation-timeline: view();
         animation-range: cover 0% cover 25%;
     }
     
     .conteudo2 {
-        animation: appear2 1.5s ease-out;
+        animation: appear2 2s ease-out;
         animation-timeline: view();
         animation-range: cover 0% cover 25%;
     }
