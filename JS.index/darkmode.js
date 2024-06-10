@@ -11,6 +11,7 @@ const user = document.getElementById('user');
 const logoutbtn = document.getElementById('logout-button');
 const drop = document.querySelectorAll('.dropdown-menu');
 const dropprod = document.querySelectorAll('.dropprod');
+const wrap = document.querySelectorAll('.title-wrap');
 
 toggle.addEventListener('change', function() {
   if (this.checked) {
@@ -20,6 +21,10 @@ toggle.addEventListener('change', function() {
         elemento.style.transition = ".5s";
       });
       dropprod.forEach(function(elemento) {
+        elemento.style.color = "white";
+        elemento.style.transition = ".5s";
+      });
+      wrap.forEach(function(elemento){
         elemento.style.color = "white";
         elemento.style.transition = ".5s";
       });
@@ -53,6 +58,10 @@ toggle.addEventListener('change', function() {
         elemento.style.transition = ".5s";
       });
       dropprod.forEach(function(elemento) {
+        elemento.style.color = "";
+        elemento.style.transition = ".5s";
+      });
+      wrap.forEach(function(elemento){
         elemento.style.color = "";
         elemento.style.transition = ".5s";
       });
@@ -94,6 +103,10 @@ if (darkModePreference === 'on') {
         elemento.style.color = "white";
         elemento.style.transition = ".5s";
       });
+      wrap.forEach(function(elemento){
+        elemento.style.color = "white";
+        elemento.style.transition = ".5s";
+      });
     main.style.backgroundColor = "black";
     main.style.transition = '.5s';
     topo.style.backgroundColor = "black";
@@ -123,6 +136,10 @@ if (darkModePreference === 'on') {
         elemento.style.transition = ".5s";
       });
     dropprod.forEach(function(elemento) {
+        elemento.style.color = "";
+        elemento.style.transition = ".5s";
+      });
+      wrap.forEach(function(elemento){
         elemento.style.color = "";
         elemento.style.transition = ".5s";
       });

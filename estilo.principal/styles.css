@@ -109,7 +109,7 @@ body {
 header {
     background-color: rgb(212, 212, 212);
     color: rgb(0, 0, 0);
-    padding: 10px;
+    padding: 5px;
     transition: .5s;
     position: sticky;
     top: -1px;
