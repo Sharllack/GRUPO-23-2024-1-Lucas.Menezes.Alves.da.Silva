@@ -677,14 +677,14 @@ main {
     transition-duration: .5s;
 }
 
-.conteudo1 {
-    animation: appear1 1s ease-in-out;
+.conteudo1, .conteudo3 {
+    animation: appear1 1.5s ease-out;
     animation-timeline: view();
     animation-range: cover 0% cover 25%;
 }
 
-.conteudo2, .conteudo3 {
-    animation: appear2 1s ease-in-out;
+.conteudo2 {
+    animation: appear2 1.5s ease-out;
     animation-timeline: view();
     animation-range: cover 0% cover 25%;
 }
