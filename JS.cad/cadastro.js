@@ -28,7 +28,6 @@ function confirmarSenha() {
         resSenha.textContent = "Tudo certo!";
         resSenha.style.color = "green";
         csen.style.border = "1.5px solid green";
-        return true;
     }
 }
 
@@ -37,15 +36,8 @@ function cadastrarUsuario(event) {
 
     if (!verificarCPF()) {
         return false;
-    }
 
-    if(sen.value != csen.value){
-        resSenha.textContent = "As senhas não correspondem!";
-        resSenha.style.color = "red";
-        csen.style.border = "1.5px solid red";
-        return false;
-    
-    }else if (nome.value != ''
+    } else if (nome.value != ''
             && data.value != ''
             && sexo.value != ''
             && mae.value != ''
@@ -92,7 +84,6 @@ function cadastrarUsuario(event) {
     } else {
         alert('Preencha os campos corretamente.');
     };
-
 }
 
 function formataCell(v){
