@@ -588,6 +588,21 @@ main {
     border-radius: 10px;
 }
 
+.luvas-container img {
+    height: 250px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.luvas-container div {
+    margin-left: 14px;
+    height: 420px;
+    width: 220px;
+    background: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.26);
+    border-radius: 10px;
+}
+
 .carousel div {
     margin-left: 14px;
     height: 420px;
@@ -604,7 +619,7 @@ main {
     margin-left: 0px;
 }
 
-.carousel h2 {
+.carousel h2, .luvas-container h2 {
     float: right;
     margin-right: 20px;
     font-size: 1.2em;
@@ -615,15 +630,19 @@ main {
     z-index: 9; /* Um valor maior que o da imagem para ficar por cima */
 }
 
-.carousel .hr1 {
+.luvas-container {
+    display: flex;
+}
+
+.carousel .hr1, .luvas-container .hr1 {
     margin: 40px 20px 10px 20px;
 }
 
-.carousel .hr2 {
+.carousel .hr2, .luvas-container .hr2 {
     margin: 10px 20px 0px 20px;
 }
 
-.carousel span {
+.carousel span, .luvas-container span {
     display: flex;
     align-items: center;
     margin: 0 auto;
