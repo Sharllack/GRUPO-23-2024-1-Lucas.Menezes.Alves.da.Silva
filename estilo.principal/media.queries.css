@@ -1248,6 +1248,38 @@
 
 @media screen and (min-width: 1349px) {
 
+    .conteudo1, .conteudo3 {
+        animation: appear1 1.5s ease-out;
+        animation-timeline: view();
+        animation-range: cover 0% cover 25%;
+    }
+    
+    .conteudo2 {
+        animation: appear2 1.5s ease-out;
+        animation-timeline: view();
+        animation-range: cover 0% cover 25%;
+    }
+    
+    @keyframes appear2 {
+        0% {
+            translate: 100vw 0;
+        }
+    
+        100% {
+            translate: 0 0;
+        }
+    }
+    
+    @keyframes appear1 {
+        0% {
+            translate: -100vw 0;
+        }
+    
+        100% {
+            translate: 0 0;
+        }
+    }
+
     #topo a {
         padding: 3px;
     }
