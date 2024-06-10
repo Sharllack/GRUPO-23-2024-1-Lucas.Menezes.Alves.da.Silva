@@ -1323,6 +1323,22 @@
 
 @media screen and (min-width: 1349px) {
 
+    .luvas-container {
+        animation: appear 1.5s ease-out;
+        animation-timeline: view();
+        animation-range: cover 0% cover 25%;
+    }
+
+    @keyframes appear {
+        0% {
+            translate: 100vw 0;
+        }
+
+        100% {
+            translate: 0 0;
+        }
+    }
+
     .conteudo1, .conteudo3 {
         animation: appear1 1.5s ease-out;
         animation-timeline: view();
