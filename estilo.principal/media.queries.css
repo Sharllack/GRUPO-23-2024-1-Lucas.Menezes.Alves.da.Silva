@@ -1040,6 +1040,12 @@
     }
 }
 
+@media screen and (min-width: 1205px)  {
+    .promo {
+        display: block;
+    }
+}
+
 @media screen and (min-width: 628px) and (max-width: 1349px) {
     .img-container {
         display: flex;
@@ -1390,9 +1396,5 @@
     #pe > ul > li > a:hover {
         background-color: rgb(94, 93, 93);
         transition-duration: .5s;
-    }
-
-    .promo {
-        display: block;
     }
 }
