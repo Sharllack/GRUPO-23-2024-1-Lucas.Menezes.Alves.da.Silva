@@ -28,7 +28,7 @@ toggle.addEventListener('change', function() {
         elemento.style.color = "white";
         elemento.style.transition = ".5s";
       });
-      main.style.backgroundColor = "black";
+      main.style.backgroundColor = "#000000e8";
       main.style.transition = '.5s';
       topo.style.backgroundColor = "black";
       topo.style.transition = '.5s';
@@ -107,7 +107,7 @@ if (darkModePreference === 'on') {
         elemento.style.color = "white";
         elemento.style.transition = ".5s";
       });
-    main.style.backgroundColor = "black";
+    main.style.backgroundColor = "#000000e8";
     main.style.transition = '.5s';
     topo.style.backgroundColor = "black";
     topo.style.transition = '.5s';
