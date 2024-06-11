@@ -311,6 +311,18 @@ main {
     width: 98%;
     height: 200px;
     overflow: hidden;
+
+    animation: slideAppear 1.5s ease-out 1s;
+}
+
+@keyframes slideAppear {
+    0% {
+        translate: -100vw 0;
+    }
+
+    100% {
+        translate: 0 0;
+    }
 }
 
 .slides {
@@ -551,7 +563,8 @@ main {
         translate: 100vw 0;
     }
 
-    100% {        translate: 0 0;
+    100% {
+        translate: 0 0;
     }
 }
 
@@ -644,6 +657,33 @@ main {
     border-radius: 0 20px;
     position: relative; /* Necessário para o z-index funcionar */
     z-index: 9; /* Um valor maior que o da imagem para ficar por cima */
+}
+
+.promo {
+    animation: promoAppear 1.3s ease-in-out infinite;
+    display: none;
+}
+
+@keyframes promoAppear {
+    0% {
+        opacity: 0;
+        scale: 1;
+    }
+
+    50% {
+        opacity: 1;
+        scale: 1.02;
+    }
+
+    100% {
+        opacity: 0;
+        scale: 1;
+    }
+}
+
+.luvas-content {
+    display: flex;
+    align-items: center;
 }
 
 .luvas-container {

@@ -9,6 +9,7 @@
     
     .luvas-container div {
         height: 320px;
+        width: 100%;
     }
 
     .luvas-container div:first-child {
@@ -378,6 +379,7 @@
     
     .luvas-container div {
         height: 320px;
+        width: 100%;
     }
 
     .luvas-container div:first-child {
@@ -726,7 +728,8 @@
     }
     
     .luvas-container div {
-        height: 320px;
+        height: 350px;
+        width: 100%;
     }
 
     .luvas-container div:first-child {
@@ -1038,7 +1041,6 @@
 }
 
 @media screen and (min-width: 628px) and (max-width: 1349px) {
-
     .img-container {
         display: flex;
     }
@@ -1388,5 +1390,9 @@
     #pe > ul > li > a:hover {
         background-color: rgb(94, 93, 93);
         transition-duration: .5s;
+    }
+
+    .promo {
+        display: block;
     }
 }
