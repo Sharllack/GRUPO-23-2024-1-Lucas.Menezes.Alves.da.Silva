@@ -577,7 +577,6 @@
     header {
         position: sticky;
         top: -1px;
-        padding: 0px;
     }
 
     header h1 {
