@@ -10,7 +10,7 @@ function logar(event) {
 
     if (login == usuario.value && pass == sen.value) {
         document.getElementById('res').textContent = 'Usuário logado com sucesso!';
-        document.getElementById('res').style.color = 'green';
+        document.getElementById('res').style.color = 'rgb(0, 255, 42)';
 
         setTimeout(function(){ window.location = "./index.html"; }, 2000);
 
