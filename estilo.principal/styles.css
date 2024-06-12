@@ -73,6 +73,10 @@ body {
     font-size: .95em;
 }
 
+#logout-icon {
+    height: 25px;
+}
+
 #logout-button {
     background: none;
     border: none;
@@ -660,24 +664,21 @@ main {
 }
 
 .promo {
-    animation: promoAppear 1.3s ease-in-out infinite;
+    animation: promoAppear 1s ease-in-out infinite;
     display: none;
 }
 
 @keyframes promoAppear {
     0% {
         opacity: 0;
-        scale: 1;
     }
 
     50% {
         opacity: 1;
-        scale: 1.02;
     }
 
     100% {
         opacity: 0;
-        scale: 1;
     }
 }
 
