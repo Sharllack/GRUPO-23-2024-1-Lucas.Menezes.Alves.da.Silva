@@ -53,7 +53,3 @@ function validarCPF(cpf) {
                 return false;
             }
         }
-
-function formatacpf(v){
-    v.value = v.value.replace(/(\d{3})(\d{3})(\d{3})(\d)/, '$1.$2.$3-$4')
-}

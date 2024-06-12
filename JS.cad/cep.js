@@ -55,8 +55,3 @@ window.onload = function() {
     bai.setAttribute("readonly", true);
 }
 }
-
-function formataCep(v){
-    v.value = v.value.replace(/\D/g, '');
-    v.value = v.value.replace(/(\d{5})(\d)/, '$1-$2');
-}
