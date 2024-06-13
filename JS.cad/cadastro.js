@@ -27,7 +27,7 @@ function confirmarSenha() {
     } else {
         resSenha.textContent = "Tudo certo!";
         resSenha.style.color = "green";
-        csen.style.border = "1.5px solid green";
+        csen.style.border = "1.5px solid rgb(0, 255, 42)";
     }
 }
 
@@ -76,7 +76,7 @@ function cadastrarUsuario(event) {
                          localStorage.setItem('csen', csen.value);
 
     resSenha.textContent = "Cadastro efetuado com sucesso!";
-    resSenha.style.color = "green";
+    resSenha.style.color = "rgb(0, 255, 42)";
 
     setTimeout(function(){ window.location = "./login.html"; }, 2000);
 
