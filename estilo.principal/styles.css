@@ -663,6 +663,24 @@ main {
     z-index: 9; /* Um valor maior que o da imagem para ficar por cima */
 }
 
+.imgSec {
+    animation: promoAppear 1s ease-in-out infinite;
+}
+
+@keyframes promoAppear {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 .promo {
     animation: promoAppear 1s ease-in-out infinite;
     display: none;
@@ -713,6 +731,15 @@ main {
     width: 80%;
     margin: auto;
     font-size: .8em;
+}
+
+.imgPrin{
+    position: relative;
+}
+
+.imgSec {
+    position: absolute;
+    right: 0;
 }
 
 .prod-item p a {

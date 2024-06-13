@@ -1043,6 +1043,10 @@
     .promo {
         display: block;
     }
+    
+    .imgSec {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 628px) and (max-width: 1349px) {
