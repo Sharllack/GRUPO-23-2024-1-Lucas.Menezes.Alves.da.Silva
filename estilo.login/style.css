@@ -167,8 +167,16 @@ header h1 {
     padding: 8px;
     border-radius: 25px;
     border: none;
+    border-bottom: 2px solid lightgray;
     padding-right: 50px;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.425);
+    outline: none;
+    transition: .5s;
+}
+
+.conteudo:focus {
+    border-bottom: 2px solid brown;
+    transition: .5s;
 }
 
 #res {
