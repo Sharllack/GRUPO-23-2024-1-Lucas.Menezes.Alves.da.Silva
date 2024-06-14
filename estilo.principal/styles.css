@@ -740,6 +740,7 @@ main {
 .imgSec {
     position: absolute;
     right: 0;
+    transform: translate(-2px);
 }
 
 .prod-item p a {
