@@ -1,34 +1,38 @@
 function validarCPF(cpf) {
-    // Remove caracteres não numéricos
-    cpf = cpf.replace(/\D/g, '');
+    const numeros = cpf.replace(/\D+/g, ''); // Remove caracteres não numéricos
+    if (numeros.length !== 11) return false; // Verifica se o CPF tem 11 dígitos
 
-    // Verifica se o CPF tem 11 dígitos
-    if (cpf.length !== 11) {
-        return false;
-    }
+    // Verifica se todos os dígitos são iguais
+    const digitosIguais = numeros.split('').every(digito => digito === numeros[0]);
+    if (digitosIguais) return false;
 
-    // Calcula o primeiro dígito verificador
+    // Cálculo do primeiro dígito verificador
     let soma = 0;
     for (let i = 0; i < 9; i++) {
-        soma += parseInt(cpf.charAt(i)) * (10 - i);
+        soma += parseInt(numeros.charAt(i)) * (10 - i);
     }
     let resto = (soma * 10) % 11;
-    let digito1 = (resto === 10) ? 0 : resto;
+    if (resto === 10 || resto === 11) resto = 0;
+    if (resto !== parseInt(numeros.charAt(9))) return false;
 
-    // Calcula o segundo dígito verificador
+    // Cálculo do segundo dígito verificador
     soma = 0;
     for (let i = 0; i < 10; i++) {
-        soma += parseInt(cpf.charAt(i)) * (11 - i);
+        soma += parseInt(numeros.charAt(i)) * (11 - i);
     }
     resto = (soma * 10) % 11;
-    let digito2 = (resto === 10) ? 0 : resto;
+    if (resto === 10 || resto === 11) resto = 0;
+    if (resto !== parseInt(numeros.charAt(10))) return false;
 
-    // Verifica se os dígitos verificadores são iguais aos do CPF
-    if (parseInt(cpf.charAt(9)) !== digito1 || parseInt(cpf.charAt(10)) !== digito2) {
-        return false;
-    }
+    return true; // CPF válido
+}
 
-    return true;
+// Exemplo de uso:
+const cpfExemplo = '12345678909'; // CPF fictício
+if (validaCPF(cpfExemplo)) {
+    console.log('CPF válido.');
+} else {
+    console.log('CPF inválido.');
 }
 
 // Exemplo de uso:
