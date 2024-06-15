@@ -116,7 +116,7 @@ header {
     color: rgb(0, 0, 0);
     padding: 10px;
     transition: .5s;
-    position: sticky;
+    position: sticky;   
     top: -1px;
     z-index: 100;
 

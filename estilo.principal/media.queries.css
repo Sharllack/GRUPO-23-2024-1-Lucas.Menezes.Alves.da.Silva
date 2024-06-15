@@ -1340,8 +1340,8 @@
 
     .luvas-container {
         animation: appear 1.5s ease-out;
-        animation-timeline: view();
-        animation-range: cover 0% cover 25%;
+        animation-timeline: view(); /*Para que a animação funcione com a rolagem da página*/
+        animation-range: cover 0% cover 25%; /* Porcentagem da rolagem da tela para a animação ser concluída */
     }
 
     @keyframes appear {
