@@ -28,14 +28,6 @@ function validarCPF(cpf) {
 }
 
 // Exemplo de uso:
-const cpfExemplo = '12345678909'; // CPF fictício
-if (validaCPF(cpfExemplo)) {
-    console.log('CPF válido.');
-} else {
-    console.log('CPF inválido.');
-}
-
-// Exemplo de uso:
 
         function verificarCPF() {
             const cpfInput = document.getElementById('cpf');
