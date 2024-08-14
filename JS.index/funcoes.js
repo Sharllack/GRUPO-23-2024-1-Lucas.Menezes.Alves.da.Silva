@@ -6,6 +6,7 @@ function mudouTamanho() {
         pe.style.display = 'none'
     }
 }
+
 function clickMenu() {
     const pe = document.getElementById('pe');
     if (pe.style.display == 'block') {
